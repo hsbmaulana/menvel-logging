@@ -21,6 +21,20 @@ How to use it :
 $ php artisan migrate
 ```
 
+- Sample usage.
+
+```php
+use Menvel\Logging\Contracts\Repository\ILoggingRepository;
+
+$repository = app(ILoggingRepository::class);
+// $repository->setUser(...); //
+// $repository->getUser(); //
+
+// $repository->logDebug([ 'message' => "...", 'context' => [ "...", ], 'user_ip' => "127.0.0.1", 'user_agent' => "Symfony", ]); //
+// $repository->unlog('...'); //
+// $repository->all(); //
+```
+
 Author
 ---
 
