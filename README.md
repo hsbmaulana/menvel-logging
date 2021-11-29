@@ -13,17 +13,13 @@ $ composer require hsbmaulana/menvel-logging
 
 How to use it :
 
-- Publish files.
+- Put `Menvel\Logging\LoggingServiceProvider` to service provider configuration list.
 
-```
-$ php artisan vendor:publish --provider="Menvel\Logging\LoggingServiceProvider"
-```
+- Migrate.
 
 ```
 $ php artisan migrate
 ```
-
-- Put `Menvel\Logging\LoggingServiceProvider` to service provider configuration list.
 
 Author
 ---
